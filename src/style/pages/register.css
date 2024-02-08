@@ -1,0 +1,66 @@
+.form-control,
+.form-control select {
+  margin: 6px 0;
+}
+.label {
+  padding-bottom: 4px;
+  font-size: 18px;
+}
+h5 {
+  font-size: 22px;
+}
+#date {
+  text-align: end;
+}
+.lang {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: black;
+}
+.lang::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #b2922f;
+  transform-origin: center left;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+.lang:hover::before {
+  transform-origin: center right;
+  transform: scaleX(1);
+}
+.ReactFlagsSelect-module_selectOptionValue__vS99- {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  flex-direction: row-reverse;
+}
+.ReactFlagsSelect-module_selectValue__152eS {
+  flex-direction: row-reverse;
+}
+/* Map */
+.map-res {
+  overflow: hidden;
+  padding-bottom: 56%;
+  position: relative;
+  height: 0;
+}
+.map-res iframe {
+  left: 0;
+  top: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+} 
